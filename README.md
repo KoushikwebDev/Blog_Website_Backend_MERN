@@ -1,15 +1,21 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Welcome to my new awesome project, MyBlogApp!
 
-This project has been created using **webpack-cli**, you can now run
+This project has been created using following technologies,
 
-```
-npm run build
-```
+- nodejs
+- typescript
+- express
+- mongodb
+- swagger docs
+- jest
 
-or
+### Routes
 
-```
-yarn build
-```
+- `/api/v1/add` - to add new blog
+- `/api/v1/get` - to get all blogs
+- `/api/v1/update` - to update a blog
+- `/api/v1/delete` - to delete a blog
 
-to bundle your application
+## [Hosted URL](https://my-blog-app.up.railway.app)
+
+[Swagger Doc](https://my-blog-app.up.railway.app/api-docs)

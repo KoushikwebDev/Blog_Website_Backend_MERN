@@ -10,9 +10,9 @@ import {
 const router = express.Router();
 
 router.get("/", home);
-router.post("/add", addBlog);
-router.get("/get", getBlog);
-router.put("/edit/:id", editBlog);
-router.delete("/delete/:id", deleteBlog);
+router.post("/api/v1/add", addBlog);
+router.get("/api/v1/get", getBlog);
+router.put("/api/v1/edit/:id", editBlog);
+router.delete("/api/v1/delete/:id", deleteBlog);
 
 export default router;

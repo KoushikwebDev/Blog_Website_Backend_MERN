@@ -1,5 +1,5 @@
 const swaggerAutogen = require("swagger-autogen")();
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 dotenv.config();
 const { HOST } = process.env;
 
@@ -9,10 +9,11 @@ const doc = {
     description: "Description",
   },
   host: `${HOST}`,
-  schemes: ["http"],
+  schemes: ["http", "https"],
+  versions: ["v1"],
 };
 
 const outputFile = "./swagger.json";
-const endpointsFiles = ["./routes/userRouter.ts"];
+const endpointsFiles = ["./src/routes/userRouter.ts"];
 
 swaggerAutogen(outputFile, endpointsFiles, doc);

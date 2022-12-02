@@ -8,7 +8,8 @@
   "host": "localhost:4000",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {
@@ -18,7 +19,7 @@
         "responses": {}
       }
     },
-    "/add": {
+    "/api/v1/add": {
       "post": {
         "description": "",
         "parameters": [
@@ -51,7 +52,7 @@
         }
       }
     },
-    "/get": {
+    "/api/v1/get": {
       "get": {
         "description": "",
         "parameters": [],
@@ -65,7 +66,7 @@
         }
       }
     },
-    "/edit/{id}": {
+    "/api/v1/edit/{id}": {
       "put": {
         "description": "",
         "parameters": [
@@ -104,7 +105,7 @@
         }
       }
     },
-    "/delete/{id}": {
+    "/api/v1/delete/{id}": {
       "delete": {
         "description": "",
         "parameters": [
@@ -125,5 +126,8 @@
         }
       }
     }
-  }
+  },
+  "versions": [
+    "v1"
+  ]
 }
