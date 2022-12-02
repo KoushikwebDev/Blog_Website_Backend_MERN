@@ -5,7 +5,7 @@ import {
   QueryOptions,
 } from "mongoose";
 
-import blogSchema, { blogDocument } from "../Schema/blogSchema";
+import blogSchema, { blogDocument } from "../schema/blogSchema";
 
 export function createBlog(input: DocumentDefinition<blogDocument>) {
   return blogSchema.create(input);

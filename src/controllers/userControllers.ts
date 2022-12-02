@@ -6,7 +6,7 @@ import {
   findBlog,
   deleteBlogs,
 } from "../services/services";
-import blogSchema, { blogDocument } from "../Schema/blogSchema";
+import blogSchema, { blogDocument } from "../schema/blogSchema";
 
 export const home = (req: Request, res: Response): void => {
   res.status(200).send("<h1>Hello User Welcome To Backend</h1>");

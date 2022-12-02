@@ -1,10 +1,10 @@
-import connectToDB from "../database/database";
+import connectToDB from "./database/database";
 connectToDB();
 import express from "express";
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("../swagger.json");
 import cors from "cors";
-import router from "../routes/userRouter";
+import router from "./routes/userRouter";
 const app = express();
 
 app.use(cors());
