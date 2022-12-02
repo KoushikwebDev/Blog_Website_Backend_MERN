@@ -5,8 +5,8 @@
   "main": "build/server.js",
   "scripts": {
     "build-ts": "tsc",
-    "start": "npm run build-ts && node dist/server.js",
-    "dev": "node autoGenSwagger && nodemon ./src/server.ts",
+    "start": "npm run create-swagger && npm run build-ts && node dist/server.js",
+    "create-swagger": "node autoGenSwagger",
     "test": "jest"
   },
   "keywords": [],

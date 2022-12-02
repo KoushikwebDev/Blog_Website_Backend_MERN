@@ -1,11 +1,12 @@
 const swaggerAutogen = require("swagger-autogen")();
+const { HOST } = process.env;
 
 const doc = {
   info: {
     title: "My Blog API",
     description: "Description",
   },
-  host: "localhost:4000",
+  host: `${HOST}`,
   schemes: ["http"],
 };
 
