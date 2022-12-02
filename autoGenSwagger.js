@@ -1,4 +1,6 @@
 const swaggerAutogen = require("swagger-autogen")();
+import dotenv from "dotenv";
+dotenv.config();
 const { HOST } = process.env;
 
 const doc = {
