@@ -7,23 +7,28 @@ export interface blogDocument extends Document {
   tags: string[];
 }
 
-const blogSchema = new Schema<Blog>({
-  title: {
-    type: String,
-    unique: true,
-    require: [true, "Title is required."],
-    trim: true,
+const blogSchema = new Schema<Blog>(
+  {
+    title: {
+      type: String,
+      unique: true,
+      require: [true, "Title is required."],
+      trim: true,
+    },
+    body: {
+      type: String,
+      require: [true, "Body is required."],
+      trim: true,
+    },
+    tags: {
+      type: [String],
+      trim: true,
+    },
   },
-  body: {
-    type: String,
-    require: [true, "Body is required."],
-    trim: true,
-  },
-  tags: {
-    type: [String],
-    trim: true,
-  },
-});
+  {
+    timestamps: true,
+  }
+);
 
 const model = mongoose.model<Blog>("blog", blogSchema);
 
