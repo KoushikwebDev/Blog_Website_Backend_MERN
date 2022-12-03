@@ -7,10 +7,7 @@
   },
   "host": "localhost:4000",
   "basePath": "/",
-  "schemes": [
-    "http",
-    "https"
-  ],
+  "schemes": ["https", "http"],
   "paths": {
     "/": {
       "get": {
@@ -127,7 +124,5 @@
       }
     }
   },
-  "versions": [
-    "v1"
-  ]
+  "versions": ["v1"]
 }
