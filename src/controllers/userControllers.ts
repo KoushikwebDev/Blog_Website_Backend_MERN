@@ -108,3 +108,14 @@ export const deleteBlog = async (req: Request, res: Response) => {
     });
   }
 };
+
+export const notFound = async (req: Request, res: Response) => {
+  res.status(404).json({
+    message: "Page Not found, this route does not exists.",
+    home: "/",
+    addBlog: "/api/v1/add",
+    getBlog: "/api/v1/get",
+    editBlog: "/api/v1/edit/:id",
+    deleteBlog: "api/v1/delete/:id",
+  });
+};

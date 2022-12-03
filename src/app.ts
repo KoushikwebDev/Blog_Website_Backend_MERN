@@ -5,7 +5,7 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("../swagger.json");
 import cors from "cors";
 import router from "./routes/userRouter";
-const app = express();
+const app: express.Application = express();
 
 app.use(cors());
 app.use(express.json());

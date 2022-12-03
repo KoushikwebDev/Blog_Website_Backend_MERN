@@ -13,6 +13,7 @@ const blogSchema = new Schema<Blog>(
       type: String,
       unique: true,
       require: [true, "Title is required."],
+      maxLength: [30, "Tittle length should not be more than 30 Character."],
       trim: true,
     },
     body: {
