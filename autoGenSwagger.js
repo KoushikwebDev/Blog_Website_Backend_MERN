@@ -9,7 +9,7 @@ const doc = {
     description: "Description",
   },
   host: `${HOST}`,
-  schemes: ["http", "https"],
+  schemes: ["https", "http"],
   versions: ["v1"],
 };
 
